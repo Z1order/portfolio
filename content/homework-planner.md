@@ -1,12 +1,12 @@
 title: Homework Planner
 kind: Apple app
-status: In App Store review
+status: Live
 order: 1
 tagline: Homework tracking that follows you from desk to wrist.
-platforms: iPhone, iPad, Mac, Apple Watch
+platforms: iPhone, iPad, Mac, Apple Watch (iOS 17+)
 stack: SwiftUI, SwiftData, CloudKit
 image: homework-planner.png
-links: Site | https://z1order.github.io/homework-planner-site/
+links: App Store | https://apps.apple.com/us/app/homework-planner-for-students/id6797358318 ; Site | https://z1order.github.io/homework-planner-site/
 ---
 
 Add an assignment with a title, class, description, due date and an optional

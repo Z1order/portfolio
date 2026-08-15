@@ -65,6 +65,28 @@ For `status`, prefer the broad public-facing label over the specific truth.
 "In App Store review" covers submitted, rejected-and-responding, and awaiting
 review alike. That is deliberate.
 
+## Keeping status honest
+
+Hand-written statuses go stale the moment Apple approves something. Before
+touching this repo, run:
+
+```bash
+python3 check_status.py
+```
+
+It asks the App Store what is actually published under the developer account and
+reports anything that disagrees with `content/*.md` — an app marked in review
+that has shipped, an app marked Live that is not there, or a published app with
+no content file at all. It exits non-zero when something disagrees.
+
+When it flags an app as newly live: set `status: Live` and add an
+`App Store | https://apps.apple.com/us/app/<slug>/id<trackId>` entry at the
+front of `links`.
+
+Two older apps under the same developer account (`2-Letter Sight Words`,
+`The Ice Run`, both `com.aariz.*`) are unrelated to these projects and will
+always be reported as unmatched. Ignore them.
+
 ## House style for the prose
 
 Match the existing entries. They are written to be read by a person who does not

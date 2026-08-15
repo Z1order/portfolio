@@ -1,12 +1,12 @@
 title: Wrist Checkers
 kind: Apple app
-status: In App Store review
+status: Live
 order: 7
 tagline: English draughts on a watch, with taps that land where you meant them.
 platforms: Apple Watch (standalone)
 stack: SwiftUI, watchOS
 image: wrist-checkers.png
-links: Site | https://z1order.github.io/wrist-checkers/
+links: App Store | https://apps.apple.com/us/app/wrist-checkers/id6797733559 ; Site | https://z1order.github.io/wrist-checkers/
 ---
 
 A standalone Apple Watch draughts game against a built-in engine, played by
