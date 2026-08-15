@@ -37,7 +37,9 @@ and publishes `_site/` to GitHub Pages. Nothing needs building locally first.
 | `build.py` | The whole generator, ~200 lines. |
 | `style.css` | Light and dark, no framework. |
 | `CLAUDE.md` | Conventions — read this before adding a project. |
+| `check_status.py` | Asks the App Store what is actually published and flags anything `content/` disagrees with. |
 | `NOTES.md` | Private working notes. **Gitignored**, never published. |
+| `*.webloc` | Double-click in Finder to open the live site or the repo. |
 
 ## A note on what is public
 
