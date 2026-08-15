@@ -5,6 +5,7 @@ order: 2
 tagline: A grand strategy game in the spirit of HOI4, with a map you can read.
 platforms: Desktop (Godot)
 stack: Godot 4.7, C#, .NET 8
+icon: grandstrategy.svg
 ---
 
 A simplified, better-looking grand strategy game. Every launch generates a fresh

@@ -5,6 +5,7 @@ order: 3
 tagline: A log of what you actually did, not a list of what you meant to do.
 platforms: iPhone (iOS 18+), home screen widget
 stack: SwiftUI, SwiftData, WidgetKit
+icon: streak.png
 image: streak.png
 links: Site | https://z1order.github.io/streak-site/
 ---

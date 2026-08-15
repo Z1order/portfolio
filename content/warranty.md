@@ -5,6 +5,7 @@ order: 2
 tagline: Keeps the receipt, and tells you before the cover runs out.
 platforms: iPhone, iPad (iOS 17+)
 stack: SwiftUI, SwiftData, CloudKit, Vision
+icon: warranty.png
 image: warranty.png
 links: Site | https://z1order.github.io/warranty-site/
 ---

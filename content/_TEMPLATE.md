@@ -5,6 +5,7 @@ order: 99
 tagline: One line. What it is, in the words a stranger would use.
 platforms: iPhone, iPad
 stack: SwiftUI, SwiftData
+icon: project-name.png
 image: project-name.png
 links: Site | https://z1order.github.io/project-site/ ; Source | https://github.com/Z1order/project
 ---

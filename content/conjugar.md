@@ -5,6 +5,7 @@ order: 5
 tagline: Spanish verb drills that compute the answer rather than look it up.
 platforms: iPhone, iPad
 stack: SwiftUI, SwiftData
+icon: conjugar.png
 image: conjugar.png
 links: Site | https://z1order.github.io/conjugar-site/
 ---

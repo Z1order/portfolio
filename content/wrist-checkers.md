@@ -5,6 +5,7 @@ order: 7
 tagline: English draughts on a watch, with taps that land where you meant them.
 platforms: Apple Watch (standalone)
 stack: SwiftUI, watchOS
+icon: wrist-checkers.png
 image: wrist-checkers.png
 links: App Store | https://apps.apple.com/us/app/wrist-checkers/id6797733559 ; Site | https://z1order.github.io/wrist-checkers/
 ---

@@ -13,8 +13,14 @@ no HTML to touch. Add a file, and it appears.
    URL: `content/warranty.md` → `/warranty/`. Use lowercase and hyphens.
 2. Fill in the frontmatter (everything above the `---` line). See the field
    reference below.
-3. Optionally drop a screenshot in `assets/<slug>.png` and set `image:` to that
-   filename. Portrait phone screenshots look right; anything works.
+3. Optionally add art:
+   - **Icon** — `assets/icons/<slug>.png`, set `icon:`. This is what the index
+     shows. Pull the 1024×1024 from the project's
+     `Assets.xcassets/AppIcon.appiconset/AppIcon.png` and downscale it:
+     `sips -Z 128 <src> --out assets/icons/<slug>.png`. Ship the flat square —
+     the rounding is CSS, so a pre-rounded icon will look wrong.
+   - **Screenshot** — `assets/<slug>.png`, set `image:`. This appears on the
+     project page only. Portrait phone screenshots look right.
 4. Run `python3 build.py` and open `_site/index.html` to check it.
 5. Commit and push. GitHub Actions rebuilds and deploys — you do **not** commit
    `_site/`, it is generated and gitignored.
@@ -34,7 +40,8 @@ Edit its `content/*.md` file and push. Nothing else refers to it.
 | `order` | no | Sort position within its section. Defaults to 999, then alphabetical. |
 | `platforms` | no | e.g. `iPhone, iPad, Mac`. |
 | `stack` | no | e.g. `SwiftUI, SwiftData, CloudKit`. |
-| `image` | no | Filename in `assets/`. |
+| `icon` | no | Filename in `assets/icons/`. Shown on the index card. Falls back to a monogram tile of the first letter. |
+| `image` | no | Screenshot filename in `assets/`. Shown on the project page, not the index. |
 | `links` | no | `Label \| URL` pairs separated by `;`. |
 
 To add a new `kind` or `status`, edit the `KINDS` / `STATUSES` tables at the top

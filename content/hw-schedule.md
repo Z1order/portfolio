@@ -5,6 +5,7 @@ order: 6
 tagline: An eight-day school rotation, answered before you finish asking.
 platforms: iPhone, Apple Watch
 stack: SwiftUI, Vision
+icon: hw-schedule.png
 image: hw-schedule.png
 links: Site | https://z1order.github.io/hwschedule-site/
 ---

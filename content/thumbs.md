@@ -5,6 +5,7 @@ order: 4
 tagline: A typing speed test built for the phone, not ported to it.
 platforms: iPhone (iOS 18+), portrait
 stack: SwiftUI, UIKeyInput
+icon: thumbs.png
 image: thumbs.png
 links: Site | https://z1order.github.io/thumbs-site/
 ---

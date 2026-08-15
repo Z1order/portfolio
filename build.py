@@ -174,13 +174,17 @@ def badge(status):
 
 
 def card(doc):
-    shot = ""
-    if doc.get("image"):
-        shot = (f'<img class="shot" src="assets/{html.escape(doc["image"])}" alt="" '
-                f'loading="lazy">')
+    # The index shows app icons, not screenshots — at 56px a screenshot is an
+    # unreadable smudge, whereas an icon is designed to be recognised at that
+    # size. Projects with no icon of their own get a monogram tile.
+    if doc.get("icon"):
+        mark = (f'<img class="icon" src="assets/icons/{html.escape(doc["icon"])}" '
+                f'alt="" loading="lazy">')
+    else:
+        mark = f'<span class="icon monogram" aria-hidden="true">{html.escape(doc["title"][0])}</span>'
     meta = html.escape(doc.get("platforms", ""))
     return f"""<a class="card" href="{html.escape(doc['slug'])}/">
-	{shot}
+	{mark}
 	<div class="card-text">
 		<h3>{html.escape(doc['title'])} {badge(doc['status'])}</h3>
 		<p>{html.escape(doc['tagline'])}</p>

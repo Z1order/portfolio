@@ -5,6 +5,7 @@ order: 1
 tagline: Homework tracking that follows you from desk to wrist.
 platforms: iPhone, iPad, Mac, Apple Watch (iOS 17+)
 stack: SwiftUI, SwiftData, CloudKit
+icon: homework-planner.png
 image: homework-planner.png
 links: App Store | https://apps.apple.com/us/app/homework-planner-for-students/id6797358318 ; Site | https://z1order.github.io/homework-planner-site/
 ---
