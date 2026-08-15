@@ -96,15 +96,30 @@ always be reported as unmatched. Ignore them.
 
 ## House style for the prose
 
-Match the existing entries. They are written to be read by a person who does not
-already know the app:
+**The site is written in Zidaan's own voice — a middle schooler explaining his
+own projects.** That is deliberate, not a placeholder. Match it exactly:
 
-- Open with what it does and who it is for. No throat-clearing.
-- The **Worth knowing** section is the point of each page — the one genuinely
-  interesting constraint or decision. Write the thing that was hard, not the
-  thing anyone would guess. If nothing was hard, leave the section out.
-- No superlatives, no "seamless", no "powerful". The apps are small and the
-  writing should be too.
+- **Plain words only.** No "leverage", "robust", "seamless", "architecture",
+  "constraint", "deliberately". If a word would not turn up in a 6th-grade
+  classroom, pick a different one.
+- **Grammar stays correct.** Simple vocabulary, but no sentence fragments, no
+  run-ons, no "me and my friend". The writing is easy, not sloppy.
+- **First person.** "I built", "I figured out", "my first version". This is his
+  portfolio, not a company's.
+- **Short sentences**, and short paragraphs. Break a long one in two.
+- Open with what the thing does and who would use it.
+- The **tricky part** section is the point of each page: the thing that was
+  actually hard. Explain it the way you would to a friend who does not code —
+  concrete comparisons ("about the size of a pencil eraser") beat technical
+  terms. Keep the real substance; only the vocabulary gets simpler. If nothing
+  was hard, leave the section out.
+- It is fine to admit things went wrong ("my first version was really annoying
+  to play"). That reads as honest, and it is more interesting than a feature
+  list.
+
+This voice applies to `content/*.md` and the strings in `build.py` that end up
+on the page. It does **not** apply to this file, `README.md`, or code comments —
+those are notes for whoever maintains the repo, so keep them plain and direct.
 
 ## Related
 

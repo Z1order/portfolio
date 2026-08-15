@@ -2,15 +2,16 @@ title: Theater Script Learner
 kind: Web
 status: In development
 order: 1
-tagline: Learning your lines, without a second person to read the other parts.
+tagline: Practice your lines when nobody is around to read the other parts.
 platforms: Web
 stack: Next.js
 ---
 
-A web app for learning a theatre script — the rehearsal problem of drilling your
-own lines when nobody is available to read the scene with you.
+A website for memorizing a script for a play. The problem it solves is that
+practicing lines really needs two people, and there is usually nobody around to
+read the other character's parts with you.
 
-## Status
+## Where it is at
 
-Early. The working copy on this machine has its dependencies but not its source,
-so treat this entry as a placeholder until the code is back in the repository.
+Pretty early. The copy on my computer has the extra pieces it needs but not the
+actual code I wrote, so there is not much to show yet.

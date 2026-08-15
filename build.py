@@ -21,8 +21,10 @@ ASSETS = ROOT / "assets"
 OUT = ROOT / "_site"
 
 SITE_TITLE = "Zidaan Furniturewala"
-SITE_BLURB = ("Apps, games and experiments. Mostly Swift on Apple platforms, "
-              "some C# in Godot. No servers, no accounts, no tracking.")
+SITE_BLURB = ("Apps and games I have made. Most of them are for the iPhone and "
+              "the Apple Watch, and a couple are games you can play in your "
+              "browser. None of them make you sign up for anything, and none of "
+              "them track you.")
 
 # Cards are grouped under these headings, in this order. A project's `kind`
 # must match one of them; anything else lands in "Other".
@@ -160,8 +162,8 @@ def page(title, description, body, depth=0):
 <div class="wrap">
 {body}
 <footer>
-	<p>Built from <code>content/</code> by <code>build.py</code>. Source on
-	<a href="https://github.com/Z1order/portfolio">GitHub</a>.</p>
+	<p>This whole site builds itself from a folder of notes. The code for it is
+	<a href="https://github.com/Z1order/portfolio">on GitHub</a>.</p>
 </footer>
 </div>
 </body>
@@ -215,7 +217,7 @@ def index(docs):
 
 def detail(doc):
     rows = []
-    for label, key in (("Platforms", "platforms"), ("Built with", "stack")):
+    for label, key in (("Works on", "platforms"), ("Made with", "stack")):
         if doc.get(key):
             rows.append(f"<dt>{label}</dt><dd>{html.escape(doc[key])}</dd>")
     rows.append(f"<dt>Status</dt><dd>{badge(doc['status'])}</dd>")

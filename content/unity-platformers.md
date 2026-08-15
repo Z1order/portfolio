@@ -2,16 +2,16 @@ title: Unity platformers
 kind: Experiment
 status: Archived
 order: 1
-tagline: Two early Unity projects — a first platformer, and a cookie-themed one.
+tagline: Two jumping games I made back when I was learning Unity.
 platforms: Desktop (Unity)
 stack: Unity, C#
 ---
 
-`ZidFirstPlatformer` and `CookiePlatformer`, two early Unity projects kept for
-the record. Both are learning exercises rather than finished games.
+`ZidFirstPlatformer` and `CookiePlatformer`, two old Unity projects I am keeping
+around. They were me learning how Unity works, not games I ever finished.
 
-## Status
+## Where they are at
 
-Archived. Only the Unity library caches survive in the working copy on this
-machine — the scenes and assets are not checked in, so neither project can be
-opened as it stands.
+Done with. The copy on my computer only has the leftover files Unity makes on
+its own, so the levels and artwork are gone and I cannot open either one
+anymore.

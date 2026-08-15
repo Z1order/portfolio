@@ -2,7 +2,7 @@ title: Thumbs
 kind: Apple app
 status: In App Store review
 order: 4
-tagline: A typing speed test built for the phone, not ported to it.
+tagline: A typing test made for a phone instead of squished onto one.
 platforms: iPhone (iOS 18+), portrait
 stack: SwiftUI, UIKeyInput
 icon: thumbs.png
@@ -10,33 +10,41 @@ image: thumbs.png
 links: Site | https://z1order.github.io/thumbs-site/
 ---
 
-The desktop typing test assumes ten fingers, a Tab key to restart, and a screen
-wide enough to read a paragraph ahead. None of that survives the move to a
-phone. Thumbs keeps the parts that actually measure typing — a three-line window
-of words, per-character feedback, WPM and accuracy — and rebuilds the input
-layer around two thumbs and a software keyboard.
+Typing tests on a computer assume you have ten fingers, a Tab key to start over,
+and a screen wide enough to read ahead. None of that is true on a phone. Thumbs
+keeps the parts that actually measure your typing — three lines of words, every
+letter checked as you go, words per minute, and how accurate you were — and
+rebuilds the typing part around two thumbs and a phone keyboard.
 
 ## What it does
 
-- **Time or word count.** 15/30/60/120 seconds, or 10/25/50/100 words.
-- **Punctuation and numbers** as optional difficulty, generating real sentences
-  rather than scattered marks.
-- **Per-character feedback.** Wrong letters turn red, and a committed word that
-  did not match keeps a red underline so the mistake stays visible.
-- **Backspace across words.** Delete on an empty word steps back into the
-  previous one, so a fumbled word can be repaired.
-- **A haptic tap on every mistake**, because thumb typing has no other physical
-  signal that a key went wrong.
+- **Pick time or words.** 15, 30, 60, or 120 seconds, or 10, 25, 50, or 100
+  words.
+- **Turn on punctuation and numbers** to make it harder. It builds real
+  sentences instead of just sprinkling in random marks.
+- **Every letter is checked.** Wrong ones turn red, and a word you got wrong
+  keeps a red underline so you can still see the mistake later.
+- **Backspace between words.** Hitting delete on an empty word takes you back
+  into the word before it, so you can fix something you messed up.
+- **A little buzz every time you get a letter wrong**, because typing with your
+  thumbs gives you no other way to feel that you hit the wrong key.
 
-## Worth knowing
+## The tricky part
 
-The text input is a `UIKeyInput` view, not a text field. Neither SwiftUI's
-`TextField` nor a `UITextField` subclass works for a typing test: both own a
-string, both report edits after the fact, and neither reports a backspace on an
-empty buffer — which is exactly the keystroke that steps back into the previous
-word. A `UITextField` subclass cannot be forced into shape either, because
-keyboard input routes through an internal field editor rather than the field's
-own `insertText`.
+The normal text box would not work, and I went through three of them before I
+figured out why.
 
-The scoring engine owns no timer. Callers push the current instant in, which is
-what lets a 60-second test be scored in a unit test without waiting 60 seconds.
+A typing test needs to know the exact moment you press a key. Normal text boxes
+do not do that. They hold onto the text themselves, they tell you what happened
+*after* it already happened, and none of them tell you when you press backspace
+on an empty word. That last one matters a lot, because that is the exact key
+press that should send you back into the previous word. I could not fix it by
+changing a text box either, because the typing gets routed somewhere hidden
+before the text box ever sees it.
+
+So I used a much simpler piece that just reports key presses, and I built
+everything else myself.
+
+One more thing that helped: the part that keeps score does not own a clock. The
+rest of the app tells it what time it is. That means I can test a 60-second
+typing test without actually sitting there for 60 seconds.

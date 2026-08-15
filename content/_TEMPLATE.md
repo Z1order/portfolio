@@ -10,16 +10,19 @@ image: project-name.png
 links: Site | https://z1order.github.io/project-site/ ; Source | https://github.com/Z1order/project
 ---
 
-The opening paragraph is the pitch: what the thing does and who it is for. Two
-or three sentences, no more.
+Start with what the thing does and who would use it. Two or three sentences,
+no more.
 
 ## What it does
 
-- **A short bold lead-in.** Then the detail. Bullets work well here.
-- **Another one.** Keep each to a couple of lines.
+- **A few bold words to start.** Then explain. Bullets work well here.
+- **Another one.** Keep each one to a couple of lines.
 
-## Worth knowing
+## The tricky part
 
-The one genuinely interesting decision in the project — the constraint that
-shaped it, or the thing that turned out to be harder than it looked. This is
-the part worth writing. Skip the parts anyone would guess.
+The one thing in this project that was actually hard, or the problem that
+changed how the whole thing had to work. This is the part worth writing about.
+Skip anything a reader could already guess.
+
+Write it the way you would explain it to a friend who does not code. Short
+sentences. Normal words. No showing off.

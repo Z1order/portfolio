@@ -2,7 +2,7 @@ title: Streak
 kind: Apple app
 status: In App Store review
 order: 3
-tagline: A log of what you actually did, not a list of what you meant to do.
+tagline: A list of stuff you already did, not stuff you are supposed to do.
 platforms: iPhone (iOS 18+), home screen widget
 stack: SwiftUI, SwiftData, WidgetKit
 icon: streak.png
@@ -10,25 +10,29 @@ image: streak.png
 links: Site | https://z1order.github.io/streak-site/
 ---
 
-You played tennis, so you open the app and tap Tennis. If Tennis is not in your
-list yet, the New chip sitting right next to the others puts it there for good.
-Streaks and stats are derived from that record. The app never asks you to plan
-ahead, and it has no opinion about what you should have done.
+You played tennis, so you open the app and tap Tennis. If Tennis is not on your
+list yet, there is a New button sitting right next to everything else that adds
+it for good. Your streaks and stats come from what you actually did. The app
+never asks you to plan anything, and it never tells you that you should have
+done more.
 
 ## What it does
 
-- **Tap to log.** One tap for the thing you just did, optional minutes after.
-- **Streaks and stats** computed from the log, not from a schedule.
-- **A widget** on the home screen showing where you stand.
+- **One tap** for the thing you just finished. You can add how many minutes it
+  took if you want.
+- **Streaks and stats** built from your list, not from a schedule you set up.
+- **A widget** on your home screen so you can see your streak without opening
+  anything.
 
-## Worth knowing
+## Why I built it this way
 
-The app and the widget share a single database in an App Group container rather
-than syncing between two copies. The widget opens the same file the app writes
-to, which is why the app nudges the widget to reload after every save — the
-widget reads the store but does not watch it.
+The app and the widget both use the exact same save file instead of copying
+things back and forth. The widget literally opens the file the app writes to.
+That is why the app has to poke the widget after every save — the widget can
+read the file, but it does not notice on its own when the file changes.
 
-The one rule worth arguing about: a streak survives an unlogged *today*. At 9am
-you have not done anything yet, and an app that shows your 40-day streak as zero
-every single morning is telling you something you will resent. The count starts
-at today when today is logged, and at yesterday otherwise.
+The rule I had to think about hardest: your streak does not break just because
+you have not done anything *yet today*. It is 9 in the morning. Of course you
+have not gone running. If the app showed your 40-day streak as a zero every
+single morning, you would get annoyed and delete it. So the streak counts from
+today if you already logged today, and from yesterday if you have not.

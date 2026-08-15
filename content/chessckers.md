@@ -2,33 +2,38 @@ title: Chessckers
 kind: Game
 status: Live
 order: 1
-tagline: A full chess army against 24 stacking checkers. Playable in a browser.
+tagline: A whole chess army versus 24 stacking checkers. Play it in your browser.
 platforms: Web, desktop (Godot)
 stack: Godot 4.7, C#, JavaScript
 links: Play in your browser | https://z1order.github.io/chessckers/
 ---
 
-An implementation of **Chessckers**, the asymmetric board game where a full
-chess army fights 24 stacking checkers. The game is designed, written and
-illustrated by M. Edden Ishaaya and engineered by Nikita Ulianov — this project
-is an implementation of the published ruleset, not the game itself.
+**Chessckers** is a board game where one player gets a full chess set and the
+other gets 24 checkers that can stack on top of each other. So the two sides are
+not the same at all, which is what makes it fun.
+
+I did not invent this game. It was made, written, and illustrated by M. Edden
+Ishaaya and engineered by Nikita Ulianov. All I did was write a version you can
+play on a computer, using the rules they published.
 
 ## What it does
 
-- **Play in a browser**, no install, no plugin, one self-contained page.
-- **A solo opponent** in the web build, searching over the same rules engine.
-- **A desktop build** in Godot for two players at one screen.
+- **Play in a browser.** Nothing to download and nothing to install. It is all
+  one page.
+- **Play by yourself** against a computer opponent in the browser version.
+- **A desktop version** in Godot for two people on one screen.
 
-## Worth knowing
+## Why I built it this way
 
-The rules engine is plain C# with no Godot dependency, so it can be exercised on
-its own without launching a game engine. That constraint is what makes the whole
-thing testable.
+The part that knows the rules is completely separate from the part that draws
+the game. That means I can test the rules without ever opening the game, which
+saved me a huge amount of time.
 
-The web version is a second, independent port rather than an export of the Godot
-project. The engine, the opponent and the interface are separate files stitched
-into one self-contained page by a build script, with console test suites for
-both the engine and the opponent. Both suites run headlessly on macOS through
-`osascript`, so there is no Node install anywhere in the loop. The deploy
-workflow rebuilds the page and runs the engine suite before publishing, which
-means a broken rules change cannot reach the live site.
+The browser version is not an export of the desktop one. I wrote it a second
+time from scratch, in a different language, and split it into three pieces: the
+rules, the computer opponent, and the drawing. A script glues them into one file
+at the end. Both versions have their own tests that run right on my Mac without
+me installing anything extra.
+
+The best part is that the tests run automatically before the website updates. So
+if I break the rules by accident, the broken version never actually goes up.

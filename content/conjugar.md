@@ -2,7 +2,7 @@ title: Conjugar
 kind: Apple app
 status: Ready to submit
 order: 5
-tagline: Spanish verb drills that compute the answer rather than look it up.
+tagline: Spanish verb practice that figures out the answer instead of storing it.
 platforms: iPhone, iPad
 stack: SwiftUI, SwiftData
 icon: conjugar.png
@@ -10,33 +10,35 @@ image: conjugar.png
 links: Site | https://z1order.github.io/conjugar-site/
 ---
 
-Drill any of 116 verbs across 11 tenses, or look up a full conjugation table.
-Spaced repetition schedules what comes back and when, starting at two minutes so
-a mistake can be corrected inside the same sitting.
+Practice any of 116 Spanish verbs in 11 different tenses, or just look up a
+whole verb chart. The app brings back the ones you keep missing, and it starts
+by asking again after only two minutes, so you can fix a mistake while you are
+still sitting there.
 
 ## What it does
 
-- **Drill mode** over any subset of verbs and tenses.
-- **Reference tables** for the whole conjugation of any verb.
-- **Progress** per verb and tense, so you can see what is not sticking.
+- **Practice mode** with whatever verbs and tenses you want.
+- **Charts** for any verb, if you just need to look something up.
+- **Progress** for each verb and tense, so you can see what is not sticking.
 
-## Worth knowing
+## Why I built it this way
 
-Conjugation is computed, not stored. Regular endings, stem changes,
-orthographic repairs and the strong-preterite family are all derived, and a verb
-carries an explicit override only where Spanish genuinely stops being
-systematic — `ser`, `estar`, `ir`, `haber`, `dar`, `ver`, `oír`, `saber`.
+The app does not have a giant list of every verb form typed out. It works them
+out from rules instead. Regular endings, verbs that change in the middle,
+spelling fixes, and the weird past-tense group are all figured out. A verb only
+gets its answers written out by hand when Spanish stops following any pattern at
+all, which is really only eight verbs: `ser`, `estar`, `ir`, `haber`, `dar`,
+`ver`, `oír`, and `saber`.
 
-Tenses lean on each other the way a grammar book does. The present subjunctive
-is built from the `yo` present, the imperative from the present subjunctive, and
-the imperfect subjunctive from the third-person plural preterite. Each rule is
-written once, so an irregularity propagates for free: `decir` → `dijeron` →
-`dijera` needs no extra data at all.
+The cool part is that the tenses are built out of each other, the same way your
+Spanish textbook teaches them. The present subjunctive comes from the `yo` form.
+The commands come from the present subjunctive. The past subjunctive comes from
+the `ellos` preterite.
 
-The rule that earns its keep is that an irregular `yo` form beats stem reversion
-outside the boot. That single fact is what separates `tengamos` and `vengamos`
-from the wrong `tenamos` and `vinamos`, and `sigamos` from `siguamos`.
+That means I only write each rule once, and weird verbs stay weird all the way
+down without me doing anything. `decir` turns into `dijeron`, which turns into
+`dijera`, and I never had to type in `dijera` anywhere.
 
-Progress is stored as one running tally per verb and tense, with deliberately no
-per-answer log. The store stays bounded at around 1,270 rows instead of growing
-with every answer forever.
+For saving your progress, I only keep a running score for each verb and tense —
+not a record of every single answer. That keeps it at about 1,270 rows no matter
+what, instead of growing forever the longer you use the app.

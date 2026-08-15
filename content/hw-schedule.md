@@ -2,7 +2,7 @@ title: HW Schedule
 kind: Apple app
 status: Ready to submit
 order: 6
-tagline: An eight-day school rotation, answered before you finish asking.
+tagline: Tells you what class you have next without making you count days.
 platforms: iPhone, Apple Watch
 stack: SwiftUI, Vision
 icon: hw-schedule.png
@@ -10,33 +10,37 @@ image: hw-schedule.png
 links: Site | https://z1order.github.io/hwschedule-site/
 ---
 
-Harvard-Westlake runs an eight-day, five-block rotation, which makes "what do I
-have next?" a harder question than it should be. Open the app and the answer is
-already on screen: the day of the cycle, the class running now with a bar
-draining toward the bell, and what comes after it. Lift your wrist and you get
-the same two answers without taking your phone out.
+My school runs on an eight-day schedule with five classes a day, which makes
+"what do I have next?" way harder to answer than it should be. You open the app
+and the answer is already sitting there: what day of the cycle it is, the class
+you are in right now with a bar counting down to the bell, and what comes after
+it. If you look at your watch, you get the same two answers without pulling your
+phone out.
 
 ## What it does
 
-- **Today**, with the current class and the next one.
-- **The full rotation**, generated rather than typed in.
-- **Scan a printed schedule** with the camera instead of entering eight classes
+- **Today**, with the class you are in and the one coming up.
+- **The whole rotation**, which the app builds itself.
+- **Take a picture of your paper schedule** instead of typing in eight classes
   by hand.
-- **On the watch**, the same two answers at a glance.
+- **On your watch**, the same two answers in one glance.
 
-## Worth knowing
+## The part I figured out
 
-The printed schedule looks like forty separate cells, but it is one continuous
-rotation of eight lettered blocks, five per day, wrapping around. Day *n* opens
-on block `5(n−1) mod 8`, and after eight days the cycle has used forty slots —
-five whole trips through the eight letters — and lands back on A.
+The paper schedule looks like forty separate boxes, but it is really not. It is
+one pattern that just keeps going. There are eight class blocks, labeled A
+through H, and each day uses five of them, picking up wherever the last day
+stopped. Day 1 starts at A. Day 2 starts at F. Day 3 starts at C. After eight
+days you have used forty slots, which is exactly five trips through eight
+letters, and you land right back on A.
 
-So the app stores **eight** facts, not forty. Change Block C once and it changes
-on all five days it meets.
+So the app only stores **eight** things, not forty. If you change what class is
+in Block C, it changes on all five days that block shows up. I did not have to
+type the schedule in five times.
 
-The scanner reads both the course list and the day grid, because they know
-different things, and it leans on a useful redundancy: every block is printed
-five times, once per day it meets. The parser collects all five readings of each
-letter and takes the one most of them agree on, so a smudge or a bad line break
-loses the vote instead of winning silently. The review screen shows the vote
-count per block, and flags any block the photo only supports once.
+Reading the picture of your schedule uses a similar trick. Every block gets
+printed five times on the page, once for each day it meets. So instead of
+trusting one reading, the app collects all five and goes with whatever most of
+them say. If the photo is blurry in one spot, that spot gets outvoted. The check
+screen shows you the vote count for each block and warns you about any block it
+could only find once.
