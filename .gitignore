@@ -1,0 +1,9 @@
+# Generated site. Built by build.py, deployed by Actions — never committed.
+_site/
+
+# Private working notes: App Store Connect identifiers, submission status,
+# rejection history. This repository is public, so this file must not be.
+NOTES.md
+
+.DS_Store
+__pycache__/
