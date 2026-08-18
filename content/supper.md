@@ -1,14 +1,16 @@
-title: Larder
+title: Supper
 kind: Apple app
-status: In development
+status: Ready to submit
 order: 11
 tagline: Plan what you are eating this week, and get one shopping list out of it.
 platforms: iPhone, iPad
 stack: SwiftUI, SwiftData
-icon: larder.png
+icon: supper.png
+image: supper.png
+links: Site | https://z1order.github.io/supper-site/
 ---
 
-Larder is for the question "what are we eating this week, and what do I need to
+Supper is for the question "what are we eating this week, and what do I need to
 buy?" You put meals on days, write down what each one needs, and the app turns
 all of that into one shopping list.
 
@@ -17,12 +19,18 @@ and the things you have to buy. That is all the planning part actually needs.
 
 ## What it does
 
-- **A week at a time**, with breakfast, lunch and dinner on each day.
+- **A week at a time**, with breakfast, lunch and dinner on each day. Step
+  forward to plan next week, or back to see what you ate last week.
 - **One shopping list** built from every meal you planned.
+- **Amounts that add up.** 500g here and 250g there becomes 750g. Amounts you
+  cannot add, like "1.5kg" and "4", sit side by side instead of getting turned
+  into a wrong number. Something you wrote in words, like "a thumb of ginger",
+  stays exactly as you wrote it.
 - **Sorted the way a shop is**, so you are not walking back and forth.
 - **Extra things too.** Milk and bin bags go straight on the list without
   belonging to any meal.
-- **Tick things off** as you buy them.
+- **Tick things off** as you buy them, and it tells you why each thing is on
+  the list.
 
 ## The tricky part
 
