@@ -1,13 +1,13 @@
 title: Streak
 kind: Apple app
-status: In App Store review
+status: Live
 order: 3
 tagline: A list of stuff you already did, not stuff you are supposed to do.
 platforms: iPhone (iOS 18+), home screen widget
 stack: SwiftUI, SwiftData, WidgetKit
 icon: streak.png
 image: streak.png
-links: Site | https://z1order.github.io/streak-site/
+links: App Store | https://apps.apple.com/us/app/streak-activity-log/id6799180435; Site | https://z1order.github.io/streak-site/
 ---
 
 You played tennis, so you open the app and tap Tennis. If Tennis is not on your

@@ -13,8 +13,9 @@ boiler serviced or the roof patched, you write down what it was, when it was,
 who did it, and what it cost. Then two years later, when it breaks again, you
 can actually look up what happened last time.
 
-It is not a to-do list and it does not remind you of anything. It is a
-notebook for stuff that is already done.
+It is mostly a notebook for stuff that is already done, not a to-do list —
+with one exception: you can mark a job as needing doing again after a certain
+number of months, and it will actually remind you.
 
 ## What it does
 
@@ -25,6 +26,10 @@ notebook for stuff that is already done.
 - **The guarantee.** If the work came with one, the app shows a green mark on
   it while it is still good. That is really the whole reason to write the
   guarantee down.
+- **A reminder for the jobs that repeat.** Mark a fix as due again in so many
+  months, and the app tells you on the day, then logs it as a fresh entry
+  prefilled from the last one when you do it — so the history stays a list of
+  what actually happened, not a schedule of what's supposed to.
 - **Photos and a phone number** for whoever did the work, so you can call the
   same person again.
 - **Search**, across the job, the room, the person, and your notes.

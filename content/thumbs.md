@@ -1,13 +1,13 @@
 title: Thumbs
 kind: Apple app
-status: In App Store review
+status: Live
 order: 4
 tagline: A typing test made for a phone instead of squished onto one.
 platforms: iPhone (iOS 18+), portrait
 stack: SwiftUI, UIKeyInput
 icon: thumbs.png
 image: thumbs.png
-links: Site | https://z1order.github.io/thumbs-site/
+links: App Store | https://apps.apple.com/us/app/thumbs-typing-speed-test/id6799688303; Site | https://z1order.github.io/thumbs-site/
 ---
 
 Typing tests on a computer assume you have ten fingers, a Tab key to start over,

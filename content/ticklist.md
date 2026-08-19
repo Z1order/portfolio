@@ -1,13 +1,13 @@
 title: Ticklist
 kind: Apple app
-status: In App Store review
+status: Live
 order: 15
 tagline: Checklists you can reset and reuse, instead of writing the same list every time.
 platforms: iPhone, iPad
 stack: SwiftUI, SwiftData
 icon: ticklist.png
 image: ticklist.png
-links: Site | https://z1order.github.io/ticklist-site/
+links: App Store | https://apps.apple.com/us/app/ticklist-packing-lists/id6802302275; Site | https://z1order.github.io/ticklist-site/
 ---
 
 Ticklist is for lists you use over and over: pack the bag, tick everything off,
