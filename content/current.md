@@ -1,11 +1,12 @@
 title: Current
 kind: Apple app
-status: In development
+status: Ready to submit
 order: 18
 tagline: Tracks how close you are to a green card, and tells you if the line moved this month.
 platforms: iPhone
 stack: SwiftUI, SwiftData, WidgetKit
 icon: current.png
+links: Site | https://z1order.github.io/current-site/
 ---
 
 Once a month the government publishes a bulletin that tells certain immigrants

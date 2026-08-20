@@ -1,11 +1,12 @@
 title: Sixer
 kind: Apple app
-status: In development
+status: Ready to submit
 order: 32
 tagline: A cricket batting game for Apple Watch, where your timing decides the shot.
 platforms: Apple Watch (standalone)
 stack: SwiftUI, watchOS
 icon: sixer.png
+links: Site | https://z1order.github.io/sixer-site/
 ---
 
 Sixer is a one-handed cricket game for Apple Watch. You bat, the watch

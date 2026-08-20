@@ -1,11 +1,12 @@
 title: Engulf
 kind: Apple app
-status: In development
+status: Ready to submit
 order: 31
 tagline: A swarm game for Apple Watch where your army surrounds enemies instead of attacking them.
 platforms: Apple Watch (standalone)
 stack: SwiftUI, watchOS
 icon: engulf.png
+links: Site | https://z1order.github.io/engulf-site/
 ---
 
 Engulf is a game for Apple Watch where you command a swarm of little blobs.

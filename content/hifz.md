@@ -1,10 +1,11 @@
 title: Hifz
 kind: Apple app
-status: In development
+status: Ready to submit
 order: 12
 tagline: Helps you memorise the Quran by breaking it into small pieces and bringing them back before you forget.
 platforms: iPhone, iPad
 stack: SwiftUI, SwiftData
+links: Site | https://z1order.github.io/hifz-site/
 ---
 
 Hifz is for memorising the Quran. You pick a surah, and the app cuts it into

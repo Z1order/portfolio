@@ -1,12 +1,13 @@
 title: Stub
 kind: Apple app
-status: In development
+status: Ready to submit
 order: 21
 tagline: Tells you the exact minute leaving a parking garage will cost you more money.
 platforms: iPhone
 stack: SwiftUI, SwiftData, ActivityKit, CoreLocation
 icon: stub.png
 image: stub.png
+links: Site | https://z1order.github.io/stub-site/
 ---
 
 Parking garages charge in steps. $8 for the first hour, $16 up to two hours,

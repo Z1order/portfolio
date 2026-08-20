@@ -1,11 +1,12 @@
 title: Daybook
 kind: Apple app
-status: In development
+status: Ready to submit
 order: 19
 tagline: A diary app with one page per day, and nothing else to decide.
 platforms: iPhone
 stack: SwiftUI, SwiftData
 icon: daybook.png
+links: Site | https://z1order.github.io/daybook-site/
 ---
 
 Most journal apps are really just note apps with a date stuck on them. You can
