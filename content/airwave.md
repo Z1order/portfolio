@@ -1,4 +1,4 @@
-title: Airwave
+title: Airwave: Listen Together
 kind: Apple app
 status: Ready to submit
 order: 30

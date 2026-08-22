@@ -7,3 +7,7 @@ NOTES.md
 
 .DS_Store
 __pycache__/
+
+# Points at an App Store Connect client outside this repo. That script
+# carries the key id and issuer id, so neither belongs here.
+.asc.json

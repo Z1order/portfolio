@@ -1,4 +1,4 @@
-title: Relish
+title: Relish: Where to Eat Next
 kind: Apple app
 status: In development
 order: 25
@@ -6,6 +6,7 @@ tagline: Ranks every restaurant you've been to by comparing them, not by star ra
 platforms: iPhone
 stack: SwiftUI, SwiftData
 icon: relish.png
+links: Site | https://z1order.github.io/relish-site/
 ---
 
 Giving a restaurant a score out of ten sounds easy, but nobody actually

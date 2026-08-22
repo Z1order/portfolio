@@ -1,4 +1,4 @@
-title: Podium
+title: Podium: Rank Your Media
 kind: Apple app
 status: Ready to submit
 order: 26

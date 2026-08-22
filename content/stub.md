@@ -1,4 +1,4 @@
-title: Stub
+title: Stub: Parking Rate Tracker
 kind: Apple app
 status: Ready to submit
 order: 21

@@ -1,4 +1,4 @@
-title: Rotation
+title: Rotation: Wardrobe Stats
 kind: Apple app
 status: Ready to submit
 order: 24

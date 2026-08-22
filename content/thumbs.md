@@ -1,4 +1,4 @@
-title: Thumbs
+title: Thumbs: Typing Speed Test
 kind: Apple app
 status: Live
 order: 4

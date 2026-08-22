@@ -1,4 +1,4 @@
-title: Current
+title: Current: Green Card Tracker
 kind: Apple app
 status: Ready to submit
 order: 18

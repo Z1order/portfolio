@@ -33,7 +33,7 @@ Edit its `content/*.md` file and push. Nothing else refers to it.
 
 | Field | Required | Notes |
 |---|---|---|
-| `title` | yes | Display name. |
+| `title` | yes | **The exact App Store listing name** for anything with an app record — `Warranty: Receipt Keeper`, not `Warranty`. `check_status.py` enforces this. Projects with no app record (the games, the web things) just use their name. |
 | `kind` | yes | One of `Apple app`, `Game`, `Web`, `Experiment`, `Other`. Sets which section of the index it lands in. |
 | `status` | yes | One of `Live`, `In App Store review`, `Ready to submit`, `In development`, `Archived`. Renders as a coloured badge. |
 | `tagline` | yes | One line, plain language, no marketing voice. Shows on the card and under the title. |
@@ -72,27 +72,46 @@ For `status`, prefer the broad public-facing label over the specific truth.
 "In App Store review" covers submitted, rejected-and-responding, and awaiting
 review alike. That is deliberate.
 
-## Keeping status honest
+## Keeping status and names honest
 
-Hand-written statuses go stale the moment Apple approves something. Before
-touching this repo, run:
+Both go stale by hand — a status the moment Apple approves something, a title
+the moment a listing is renamed. HW Schedule shipped as **Block Day: Rotating
+Schedule** and nothing here noticed for weeks. Before touching this repo, run:
 
 ```bash
 python3 check_status.py
 ```
 
-It asks the App Store what is actually published under the developer account and
-reports anything that disagrees with `content/*.md` — an app marked in review
-that has shipped, an app marked Live that is not there, or a published app with
-no content file at all. It exits non-zero when something disagrees.
+It asks App Store Connect what is actually true and reports anything that
+disagrees with `content/*.md`:
+
+- an app marked in review that has shipped, or marked Live that is not there
+- **a title that is not the listing name, exactly**
+- an app record with no content file, or the reverse
+
+It exits non-zero when something disagrees.
 
 When it flags an app as newly live: set `status: Live` and add an
 `App Store | https://apps.apple.com/us/app/<slug>/id<trackId>` entry at the
-front of `links`.
+front of `links`. When it flags a name, copy the listing name verbatim.
 
-Two older apps under the same developer account (`2-Letter Sight Words`,
-`The Ice Run`, both `com.aariz.*`) are unrelated to these projects and will
-always be reported as unmatched. Ignore them.
+### The two halves of the check
+
+Live apps are checked through the public iTunes API — no key, no setup, always
+runs. **Unreleased app records are invisible to that API**, so their names are
+only checked when a client is configured:
+
+```bash
+echo '{"ascScript": "../Morsel/AppStore/asc.rb"}' > .asc.json
+```
+
+`.asc.json` is gitignored, and points at a script *outside* this repo, because
+that script carries the key id and issuer id and this repository is public.
+Without it the check still runs and says which half it skipped.
+
+Three records under the account are known and ignored automatically — the two
+`com.aariz.*` apps belong to another developer, and `com.zidaan.Larder` is
+Supper's old name, which Apple will not let anyone delete.
 
 ## House style for the prose
 

@@ -1,4 +1,4 @@
-title: Postcard
+title: Postcard: Travel Planner
 kind: Apple app
 status: Live
 order: 13

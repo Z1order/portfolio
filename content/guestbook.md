@@ -1,4 +1,4 @@
-title: Guestbook
+title: Guestbook: Host Notes
 kind: Apple app
 status: In development
 order: 39
@@ -6,6 +6,7 @@ tagline: A ledger for having people over, so you remember who can't eat nuts and
 platforms: iPhone
 stack: SwiftUI, SwiftData
 icon: guestbook.png
+links: Site | https://z1order.github.io/guestbook-site/
 ---
 
 Guestbook is for people who host a lot. You write down who came, what you

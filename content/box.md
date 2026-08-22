@@ -1,11 +1,13 @@
-title: Box
+title: Box: Moving Inventory
 kind: Apple app
-status: In development
+status: Ready to submit
 order: 43
 tagline: Keeps track of which moving box has what in it, so you can find it later.
 platforms: iPhone
 stack: SwiftUI, SwiftData
 icon: box.png
+image: box.png
+links: Site | https://z1order.github.io/box-site/
 ---
 
 Box is for moving house. Writing "KITCHEN" on the side of a box tells the

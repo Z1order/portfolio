@@ -1,4 +1,4 @@
-title: Sixer
+title: Sixer: Watch Cricket
 kind: Apple app
 status: Ready to submit
 order: 32

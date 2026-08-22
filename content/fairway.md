@@ -1,4 +1,4 @@
-title: Fairway
+title: Fairway: Live Golf Scoring
 kind: Apple app
 status: Live
 order: 9

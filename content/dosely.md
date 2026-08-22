@@ -1,4 +1,4 @@
-title: Dosely
+title: Dosely: Injection Tracker
 kind: Apple app
 status: Ready to submit
 order: 8
@@ -7,6 +7,7 @@ platforms: iPhone (iOS 17+)
 stack: SwiftUI, SwiftData, WidgetKit
 icon: dosely.png
 image: dosely.png
+links: Site | https://z1order.github.io/dosely-site/
 ---
 
 You tell Dosely what medicine you take and when, and it reminds you at that

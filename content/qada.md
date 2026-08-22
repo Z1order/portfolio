@@ -1,4 +1,4 @@
-title: Qada
+title: Qada: Missed Prayers & Fasts
 kind: Apple app
 status: In development
 order: 37

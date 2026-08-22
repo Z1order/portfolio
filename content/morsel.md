@@ -1,4 +1,4 @@
-title: Morsel
+title: Morsel: Food Photo Diary
 kind: Apple app
 status: Ready to submit
 order: 35

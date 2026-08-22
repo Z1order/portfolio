@@ -1,4 +1,4 @@
-title: Homework Planner
+title: Homework Planner for Students
 kind: Apple app
 status: Live
 order: 1

@@ -1,4 +1,4 @@
-title: Tare
+title: Tare: Weight Trend Tracker
 kind: Apple app
 status: Ready to submit
 order: 22

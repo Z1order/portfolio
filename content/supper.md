@@ -1,4 +1,4 @@
-title: Supper
+title: Supper: Meal Plan & Shopping
 kind: Apple app
 status: Ready to submit
 order: 11

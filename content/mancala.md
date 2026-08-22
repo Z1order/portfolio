@@ -1,4 +1,4 @@
-title: Mancala
+title: Mancala: Watch Board Game
 kind: Apple app
 status: Ready to submit
 order: 33

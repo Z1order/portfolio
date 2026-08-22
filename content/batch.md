@@ -1,10 +1,13 @@
-title: Batch
+title: Batch: Recipe Scaler
 kind: Apple app
-status: In development
+status: Ready to submit
 order: 42
 tagline: Scales a recipe up or down for a different number of people, the right way.
 platforms: iPhone
 stack: SwiftUI, SwiftData
+icon: batch.png
+image: batch.png
+links: Site | https://z1order.github.io/batch-site/
 ---
 
 Batch is for when a recipe is written for four people and you are cooking for

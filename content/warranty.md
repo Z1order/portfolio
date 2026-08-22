@@ -1,4 +1,4 @@
-title: Warranty
+title: Warranty: Receipt Keeper
 kind: Apple app
 status: Live
 order: 2

@@ -1,4 +1,4 @@
-title: Awake
+title: Awake: Time Zone Clock
 kind: Apple app
 status: In development
 order: 36

@@ -1,4 +1,4 @@
-title: Shagun
+title: Shagun: Gift Register
 kind: Apple app
 status: In development
 order: 28

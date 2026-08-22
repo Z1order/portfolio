@@ -1,4 +1,4 @@
-title: Hisab
+title: Hisab: Household Staff Pay
 kind: Apple app
 status: In development
 order: 41
@@ -6,6 +6,7 @@ tagline: A ledger for the people a household employs, so payday math is arithmet
 platforms: iPhone
 stack: SwiftUI, SwiftData
 icon: hisab.png
+links: Site | https://z1order.github.io/hisab-site/
 ---
 
 Hisab is for households that employ people — a cook, a driver, someone who

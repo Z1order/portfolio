@@ -1,4 +1,4 @@
-title: Hifz
+title: Hifz: Quran Memorization
 kind: Apple app
 status: Ready to submit
 order: 12

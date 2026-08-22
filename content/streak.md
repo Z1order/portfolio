@@ -1,4 +1,4 @@
-title: Streak
+title: Streak: Activity Log
 kind: Apple app
 status: Live
 order: 3

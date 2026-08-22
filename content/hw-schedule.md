@@ -1,4 +1,4 @@
-title: HW Schedule
+title: Block Day: Rotating Schedule
 kind: Apple app
 status: Ready to submit
 order: 6

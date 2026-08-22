@@ -1,4 +1,4 @@
-title: Gully
+title: Gully: Cricket Scoring & Stats
 kind: Apple app
 status: In development
 order: 29
@@ -6,6 +6,7 @@ tagline: A cricket scorer built for the backyard game, not the TV broadcast.
 platforms: iPhone, Apple Watch
 stack: SwiftUI, SwiftData, WatchConnectivity
 icon: gully.png
+links: Site | https://z1order.github.io/gully-site/
 ---
 
 Gully is a cricket scorer for the casual park version of the game — five

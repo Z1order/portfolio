@@ -1,4 +1,4 @@
-title: Pint
+title: Pint: Blood Donation Tracker
 kind: Apple app
 status: In development
 order: 44
@@ -6,6 +6,7 @@ tagline: Tells a blood donor exactly when they can donate again, for each type o
 platforms: iPhone, Apple Watch
 stack: SwiftUI, SwiftData, WatchConnectivity
 icon: pint.png
+links: Site | https://z1order.github.io/pint-site/
 ---
 
 Pint is for people who give blood. After you donate, you have to wait before

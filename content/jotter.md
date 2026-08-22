@@ -1,4 +1,4 @@
-title: Jotter
+title: Jotter: Notes for Watch
 kind: Apple app
 status: Ready to submit
 order: 16
@@ -7,6 +7,7 @@ platforms: Apple Watch (standalone)
 stack: SwiftUI, watchOS
 icon: jotter.png
 image: jotter.png
+links: Site | https://z1order.github.io/jotter-site/
 ---
 
 Jotter is for taking notes on your Apple Watch, without needing your phone.

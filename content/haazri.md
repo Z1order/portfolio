@@ -1,4 +1,4 @@
-title: Haazri
+title: Haazri: Work Days & Hours
 kind: Apple app
 status: In development
 order: 40
@@ -6,6 +6,7 @@ tagline: A work diary for people who work at several houses, so they always know
 platforms: iPhone
 stack: SwiftUI, SwiftData
 icon: haazri.png
+links: Site | https://z1order.github.io/haazri-site/
 ---
 
 Haazri is for people who work at more than one house — a cook, a driver,

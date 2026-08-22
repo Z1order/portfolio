@@ -1,4 +1,4 @@
-title: Daybook
+title: Daybook: Daily Diary
 kind: Apple app
 status: Ready to submit
 order: 19

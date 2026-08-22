@@ -1,4 +1,4 @@
-title: Ticklist
+title: Ticklist: Packing Lists
 kind: Apple app
 status: Live
 order: 15

@@ -1,4 +1,4 @@
-title: Dispatch
+title: Dispatch: Claude on Watch
 kind: Apple app
 status: Ready to submit
 order: 38

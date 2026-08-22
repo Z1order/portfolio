@@ -1,4 +1,4 @@
-title: Writeoff
+title: Writeoff: Tax Expense Tracker
 kind: Apple app
 status: Ready to submit
 order: 23

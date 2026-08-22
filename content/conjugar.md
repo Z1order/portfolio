@@ -1,4 +1,4 @@
-title: Conjugar
+title: Conjugar: Spanish Verbs
 kind: Apple app
 status: Ready to submit
 order: 5

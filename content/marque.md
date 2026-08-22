@@ -1,4 +1,4 @@
-title: Marque
+title: Marque: Compare Cars & Costs
 kind: Apple app
 status: Live
 order: 14

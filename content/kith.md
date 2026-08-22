@@ -1,4 +1,4 @@
-title: Kith
+title: Kith: Stay in Touch
 kind: Apple app
 status: Ready to submit
 order: 27

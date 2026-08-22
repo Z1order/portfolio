@@ -1,4 +1,4 @@
-title: Poppet
+title: Poppet: Child Dose Calculator
 kind: Apple app
 status: In development
 order: 20
@@ -7,6 +7,7 @@ platforms: iPhone
 stack: SwiftUI, SwiftData, WidgetKit
 icon: poppet.png
 image: poppet.png
+links: Site | https://z1order.github.io/poppet-site/
 ---
 
 Kids' medicine is dosed by weight, but the bottle in the cupboard is labeled
