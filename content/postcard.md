@@ -1,13 +1,13 @@
 title: Postcard
 kind: Apple app
-status: In development
+status: Live
 order: 13
 tagline: Plan a trip day by day, then keep what you thought of every place after you go.
 platforms: iPhone, iPad
 stack: SwiftUI, SwiftData
 icon: postcard.png
 image: postcard.png
-links: Site | https://z1order.github.io/postcard-site/
+links: App Store | https://apps.apple.com/us/app/postcard-travel-planner/id6802239828; Site | https://z1order.github.io/postcard-site/
 ---
 
 Postcard plans a trip as a list of places. You tick each one off while you are

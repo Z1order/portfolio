@@ -1,11 +1,12 @@
 title: Upkeep
 kind: Apple app
-status: In development
+status: Live
 order: 10
 tagline: A record of every repair you have ever done on a house, so you can look it up years later.
 platforms: iPhone, iPad
 stack: SwiftUI, SwiftData
 icon: upkeep.png
+links: App Store | https://apps.apple.com/us/app/upkeep-home-repair-log/id6802165335
 ---
 
 Upkeep is a list of everything that has been fixed in a house. When you get the

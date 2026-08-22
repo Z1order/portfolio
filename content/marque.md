@@ -1,13 +1,13 @@
 title: Marque
 kind: Apple app
-status: Ready to submit
+status: Live
 order: 14
 tagline: Helps you pick a car with real numbers, not guessing.
 platforms: iPhone
 stack: SwiftUI, SwiftData
 icon: marque.png
 image: marque.png
-links: Site | https://z1order.github.io/marque-site/
+links: App Store | https://apps.apple.com/us/app/marque-compare-cars-costs/id6802303379; Site | https://z1order.github.io/marque-site/
 ---
 
 Marque is for the question "which car should I actually buy?" It is not a

@@ -1,13 +1,13 @@
 title: Fairway
 kind: Apple app
-status: Ready to submit
+status: Live
 order: 9
 tagline: Keep score for a round of golf and watch everyone else's scores come in live.
 platforms: iPhone (iOS 17+)
 stack: SwiftUI, SwiftData, CloudKit
 icon: fairway.png
 image: fairway.png
-links: Site | https://z1order.github.io/fairway-site/
+links: App Store | https://apps.apple.com/us/app/fairway-live-golf-scoring/id6802113639; Site | https://z1order.github.io/fairway-site/
 ---
 
 Fairway is for keeping score while you play golf with other people. You look up

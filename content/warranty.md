@@ -1,13 +1,13 @@
 title: Warranty
 kind: Apple app
-status: Ready to submit
+status: Live
 order: 2
 tagline: Saves your receipts and warns you before a warranty runs out.
 platforms: iPhone, iPad (iOS 17+)
 stack: SwiftUI, SwiftData, CloudKit, Vision
 icon: warranty.png
 image: warranty.png
-links: Site | https://z1order.github.io/warranty-site/
+links: App Store | https://apps.apple.com/us/app/warranty-receipt-keeper/id6799246053; Site | https://z1order.github.io/warranty-site/
 ---
 
 Say you buy a dishwasher. Two years later it breaks, and it turns out the
