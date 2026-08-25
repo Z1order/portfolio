@@ -23,6 +23,8 @@ without any actual money moving.
   out any trade that breaks its own rules instead of shrinking it to fit.
 - **Shows up as a card** with what the account is worth, plus a menu bar app
   with the full list of what it holds and why.
+- **Has a web page** I can open to see the whole history — every morning's
+  reasoning, and what the account has done since it started.
 
 ## The tricky part
 

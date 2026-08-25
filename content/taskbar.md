@@ -19,6 +19,9 @@ to-do list I have to go and open is a to-do list I forget about.
   bottom, and plays a small sound. The last one of the day gets a better sound.
 - **Daily tasks come back every morning**, like making my bed and packing my
   bag. Finished one-time tasks clean themselves up overnight.
+- **My homework adds itself.** Every afternoon it checks my school's homework
+  site and puts anything new on the list, with the class and the due date. If I
+  already turned something in, it comes in already ticked off.
 - **Collapses into a small dot** with the number of things left in it.
 
 ## The tricky part
