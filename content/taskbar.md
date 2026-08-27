@@ -22,6 +22,12 @@ to-do list I have to go and open is a to-do list I forget about.
 - **My homework adds itself.** Every afternoon it checks my school's homework
   site and puts anything new on the list, with the class and the due date. If I
   already turned something in, it comes in already ticked off.
+- **It reads my teachers' homework documents too.** Some classes keep the real
+  list in a shared document and color a line yellow when that work is
+  actually assigned. The sync only takes the yellow lines.
+- **It warns me when homework is probably missing.** A couple of my classes
+  give work every single time they meet. If one of them met today and nothing
+  showed up, I get a task telling me to go and look for it.
 - **Collapses into a small dot** with the number of things left in it.
 
 ## The tricky part
