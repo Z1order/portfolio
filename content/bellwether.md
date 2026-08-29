@@ -25,6 +25,9 @@ without any actual money moving.
   with the full list of what it holds and why.
 - **Has a web page** I can open to see the whole history — every morning's
   reasoning, and what the account has done since it started.
+- **Lets me play against it.** The web page hands me my own fake $100,000 and
+  the same prices, and draws my line next to the robot's and the whole stock
+  market's. Both sides are added up by the same code, so it is a fair race.
 
 ## The tricky part
 

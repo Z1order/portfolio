@@ -21,6 +21,10 @@ which is what class do I have next.
 - **Switches to tomorrow on its own.** Once the last class of the day is over,
   the card shows the next school day instead. So looking at it after dinner
   tells me what to pack, and looking at it in the morning tells me what I have.
+- **Arrows at the bottom look further ahead**, one school day at a time. They
+  skip weekends and holidays, so there is never an empty day to page past. A
+  **Now** button jumps back to today, and it goes back by itself after a couple
+  of minutes if I forget.
 - **Shrinks into a small bubble** with the rotation day in it, and comes back
   with a keyboard shortcut.
 
