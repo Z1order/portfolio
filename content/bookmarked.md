@@ -1,4 +1,4 @@
-title: Bookmarked
+title: Shelved
 kind: Apple app
 status: In development
 order: 54
@@ -8,23 +8,31 @@ stack: SwiftUI, Supabase
 icon: bookmarked.png
 ---
 
-Bookmarked is for people who read a lot and want to share it. You post the books
-you are reading and the ones you have finished, with stars, a few sentences and
-how far you have gotten. You follow your friends, and their books show up in
-your feed.
+Shelved is for people who read a lot and want to share it. You post the books
+you are reading and the ones you have finished, with a few sentences and how far
+you have gotten. You follow your friends, and their books show up in your feed.
 
-It is early. The screens are built and you can tap through the whole app, but
-the books in it are made up right now. I am wiring up the real accounts and the
-real posts next.
+It used to be called Bookmarked. It is still being built. You can make a real
+account now, search for any real book and put it on your shelf, and the shelf
+saves. The posts in the feed are still made up ones I wrote, because the posting
+screen — where you write about a book and rank it — is the next thing I am
+building.
 
 ## What it does
 
 - **A feed made of books.** Every card is one book — the cover, who posted it,
-  their stars and what they thought of it.
+  and what they thought of it.
+- **No star ratings.** Stars never mean the same thing twice. When you finish a
+  book, Shelved asks you which of two books you liked better, a few times over,
+  and slots the new one into the right spot on your list. Your score comes from
+  where it landed.
+- **Any real book.** You can search by title, type in the number on the back
+  cover, point the camera at the barcode, or just type the book in yourself if
+  it is not anywhere.
 - **Posting where you are, not just what you finished.** You can put up a book
   the day you start it, again halfway through, and again at the end.
-- **A shelf on your profile** split into reading now, read, and want to read,
-  with the covers in a grid.
+- **A library on your profile** that draws your books as spines standing on
+  shelves, best at the top, like a shelf in a bookstore.
 - **A tab bar I drew myself**, with a round orange button in the middle for
   posting. The one iPhone gives you for free looks like every other app.
 - **Tapping a cover grows it into the whole page** instead of sliding a new
@@ -55,3 +63,15 @@ orange looked great on it — until I measured it. Orange on tan is too close in
 lightness to read at small sizes, so anyone with weaker eyesight would have
 struggled. Now the orange only fills buttons and big shapes, and any text in
 that color uses a darker version of it.
+
+Book search had a trap of its own. I get the books from Google, and you are
+allowed to ask without signing up for anything, which was great until search
+started coming back empty for no reason. It turned out that everyone in the
+world who asks without signing up is sharing one daily allowance, and by the
+afternoon other people had used it up. Nothing was broken on my end. My app just
+looked like it could not find a single book.
+
+So now every search has a backup. If Google says no, the app quietly asks a
+second library called Open Library instead, and you never find out the first one
+was busy. It waits a couple of seconds and tries once more before it gives up,
+because sometimes the allowance frees up that fast.
