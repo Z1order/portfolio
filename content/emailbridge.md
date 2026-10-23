@@ -20,6 +20,9 @@ the answer straight back into the same thread.
   while I am talking into my watch.
 - **A second mode for real work.** Starting the message with "claude code"
   sends it to go do the task on the computer instead of only answering.
+- **Schedule talk gets answered right away.** If I write "done algebra 3.3"
+  or "what's the next test", ClassBar's helper answers in a second without
+  asking Claude at all. Anything else goes to Claude like before.
 - **Replying in the thread keeps going.** It remembers what we were already
   talking about, so I can ask a follow-up without explaining again.
 - **Only answers me.** Mail from anyone else is written down in the log and
