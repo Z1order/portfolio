@@ -43,14 +43,40 @@ and it taps my wrist a few minutes before each class with where to go.
   gets three study sessions on different days instead of one long one.
 - **It taps my wrist before each class.** A few minutes before anything starts,
   I get a short line with what is next, which room, and the one homework thing
-  worth knowing for that class.
+  worth knowing for that class. The morning one checks the weather too, so it
+  says to bring an umbrella or a jacket when I will need one.
+- **It asks if I finished.** When a homework block ends, my watch gets a
+  reminder that says "Done: Algebra 3.3? Tick me." Ticking it ticks the task
+  in TaskBar, and the plan drops that block. If I ignore it, it goes away the
+  next day.
+- **A list for free time.** A Reminders list called Homework shows everything
+  I still have to do, soonest due first, with how long each one takes and
+  when the plan has it. If I finish early, I pick one off the top. The card
+  uses it too. Instead of saying "Done for today" it says "Free, get ahead:
+  Algebra 3.4, 30 min".
+- **Things that are not homework get planned too.** Flute practice goes on
+  school days like any other block, and it gets its own "Done?" reminder. The
+  card keeps a score of how many things I ticked this week and my streak of
+  days, and a countdown to the next test with how many study sessions are
+  left.
+- **It watches the school site between syncs.** Every half hour it checks for
+  new announcements and new assignments. A teacher posting "quiz moved to
+  Friday" shows up on my watch, and a new assignment gets planned within a
+  few minutes instead of waiting for the afternoon sync.
 - **An evening recap at 8:45.** One line with tomorrow's shape, what is due,
   and what is still left tonight. On Sunday it covers the whole week. At 9:30
   it tells me to wind down and what to pack.
 - **I can talk back from my watch.** Emailing "done algebra 3.3" ticks it off,
   "skip tonight" moves things, and "what's the next test" gets an answer in a
   second. Claude looks over tomorrow each evening and can suggest up to three
-  small changes to the plan.
+  small changes to the plan. On Sunday it can ask me a question or two, like
+  whether to move the homework I kept pushing to Saturday morning. Ticking the
+  reminder means yes.
+- **It checks on itself.** A second helper runs every half hour and asks a
+  dozen yes-or-no questions, like "did the plan run in the last hour" and "is
+  anything due tomorrow with no time set aside for it". Every no becomes a
+  warning row in TaskBar and, once a day, a reminder on my watch. The warnings
+  clear themselves when the problem does.
 - **Shrinks into a small bubble** with the rotation day in it, and comes back
   with a keyboard shortcut.
 

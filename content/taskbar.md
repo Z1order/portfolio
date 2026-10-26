@@ -28,11 +28,10 @@ to-do list I have to go and open is a to-do list I forget about.
 - **It warns me when homework is probably missing.** A couple of my classes
   give work every single time they meet. If one of them met today and nothing
   showed up, I get a task telling me to go and look for it.
-- **My homework shows up on my watch too.** The homework rows get copied into
-  a Reminders list that goes through iCloud, so the same list is on my watch
-  and in the Calendar app. Tick one off on the watch and it ticks off in
-  TaskBar. Tick it in TaskBar and the reminder finishes. The night before
-  something is due, Calendar gives me a nudge at seven.
+- **My homework shows up on my watch too.** TaskBar's list is the one the
+  rest of my setup reads. ClassBar keeps a Reminders list on my watch with the
+  same homework in it, soonest due first. Tick one off on the watch and it
+  ticks off in TaskBar. Tick it in TaskBar and the reminder finishes.
 - **Collapses into a small dot** with the number of things left in it.
 
 ## The tricky part
@@ -58,5 +57,6 @@ The reminders part had its own surprise. When I make a reminder, Apple gives
 it a name tag so I can find it again later. But a few minutes after it syncs
 to iCloud, that tag quietly changes. My first version went looking for every
 reminder by its old tag, found none of them, and decided I had deleted all
-fifty-eight of them by hand. Now it uses a second tag the server hands out,
-which stays the same forever.
+fifty-eight of them by hand. The fix was a second tag the server hands out,
+which stays the same forever. That part of the job later moved into ClassBar,
+and it still uses the second tag.
