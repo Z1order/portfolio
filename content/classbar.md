@@ -4,7 +4,7 @@ status: In development
 order: 53
 tagline: A floating card on my Mac that shows my school day, and a helper that sends the plan to my watch.
 platforms: Mac, Apple Watch
-stack: Swift, SwiftUI, AppKit, WebKit, EventKit, Claude
+stack: Swift, SwiftUI, AppKit, WebKit, EventKit, Python, Claude
 ---
 
 ClassBar sits on top of everything on my Mac and shows my school day in order —
@@ -48,7 +48,9 @@ and it taps my wrist a few minutes before each class with where to go.
 - **It asks if I finished.** When a homework block ends, my watch gets a
   reminder that says "Done: Algebra 3.3? Tick me." Ticking it ticks the task
   in TaskBar, and the plan drops that block. If I ignore it, it goes away the
-  next day.
+  next day. The Calendar app on my watch can only delete an event or rename
+  it, so those count too. If I delete a homework block, or rename it so it
+  starts with "done", the helper notices and ticks it the same way.
 - **A list for free time.** A Reminders list called Homework shows everything
   I still have to do, soonest due first, with how long each one takes and
   when the plan has it. If I finish early, I pick one off the top. The card
@@ -77,6 +79,13 @@ and it taps my wrist a few minutes before each class with where to go.
   anything due tomorrow with no time set aside for it". Every no becomes a
   warning row in TaskBar and, once a day, a reminder on my watch. The warnings
   clear themselves when the problem does.
+- **A page on my Mac for the keyboard.** A small website that only runs on
+  my computer has three pages. Due shows every assignment under the day it
+  is due, with buttons and keys to tick one off, move it to another day, or
+  give it more time. Mail shows my school inbox so I do not have to open
+  Outlook. Grades shows every class. Most teachers hide the total, so the
+  page works it out the same way the school site would, from the points and
+  the weight of each group, and says when it did.
 - **Shrinks into a small bubble** with the rotation day in it, and comes back
   with a keyboard shortcut.
 
