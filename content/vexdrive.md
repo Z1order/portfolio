@@ -24,9 +24,16 @@ because until it can drive, it cannot do anything else.
   stick is, sends that speed to the wheels, waits a tiny moment, and does it
   again forever. That is fast enough that the robot feels like it is moving
   the instant you move your thumb.
-- **A match version.** There is a second version for when the controller is
-  plugged into a competition field switch. That way the robot only drives
-  when the referee turns driver control on.
+- **It works at a match.** The program is the competition kind, so when the
+  robot is plugged into a field switch it only drives when the referee turns
+  driver control on.
+- **Autonomous moves, switched off for now.** I added two commands, `drive`
+  and `turn`, so the robot can move on its own at the start of a match. You
+  write something like `drive(24)` to go forward 24 inches or `turn(90)` to
+  turn right 90 degrees. Driving measures how far the wheels have rolled,
+  and turning uses a sensor that knows which way the robot is facing. Those
+  parts are commented out right now so basic driving works first, and
+  button A runs the routine for testing without a field switch.
 
 ## The tricky part
 
@@ -37,6 +44,17 @@ forward, the left wheels roll forward and the right wheels roll backward, and
 the robot spins in a circle instead of driving. The fix is to tell the two
 right motors that forward means the other way for them, and after that both
 sticks push the robot the same direction.
+
+The other hard part was getting the robot to stop in the right place on its
+own. If you just tell it to go full speed until it has gone 24 inches, it
+slides past the mark. So the autonomous code keeps asking one question: how
+far am I from where I want to be? Far away, it gives lots of power. Close,
+it gives a little. It also looks at how fast that gap is shrinking and
+pushes back, like a brake, so it does not fly past. And if it stops just
+short and sits there, a tiny extra nudge builds up until it finishes. That
+is called PID, and it is three numbers you tune one at a time. I wrote a
+table of what to change when the robot stops short, shoots past, or wiggles
+back and forth at the end.
 
 Every robot is built a little differently, so I also wrote down what to
 change when it drives wrong. If it spins when both sticks go forward, one
