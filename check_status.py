@@ -80,7 +80,16 @@ def all_app_records():
     if out.returncode != 0:
         print(f"warning: could not reach App Store Connect: {out.stderr.strip()[:200]}")
         return None
-    body = out.stdout.split("\n", 1)[1]          # asc.rb prints "HTTP 200" first
+    status, _, body = out.stdout.partition("\n")   # asc.rb prints "HTTP 200" first
+    if status.strip() != "HTTP 200":
+        detail = ""
+        try:
+            errs = json.loads(body).get("errors") or []
+            detail = ": " + "; ".join(e.get("title", "") for e in errs if e.get("title"))
+        except ValueError:
+            pass
+        print(f"warning: App Store Connect answered {status.strip()}{detail}")
+        return None
     return {a["attributes"]["bundleId"]: a["attributes"]["name"]
             for a in json.loads(body)["data"]}
 
