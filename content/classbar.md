@@ -12,7 +12,7 @@ every class, when it starts, which teacher and which room. I made it because I
 was checking two different school websites every morning to answer one question,
 which is what class do I have next.
 
-It grew. Now it also puts my school day and my homework plan on my Apple Watch,
+It grew. Now it also puts my school day and tonight's homework on my Apple Watch,
 and it taps my wrist a few minutes before each class with where to go.
 
 ## What it does
@@ -37,30 +37,26 @@ and it taps my wrist a few minutes before each class with where to go.
 - **The school day goes to my watch.** A helper writes the next two weeks of
   classes into a calendar that syncs through iCloud, with the room on each one.
   My watch shows them like any other appointment.
-- **It plans my homework for me.** It takes the homework from TaskBar and fits
-  it into the free time I actually have that evening, as blocks on the
-  calendar. Homework lands the night before it is due, like real life. A test
-  gets three study sessions on different days instead of one long one.
+- **It picks tonight's homework.** It takes the homework from TaskBar and
+  makes a short numbered list for today in a Reminders list called Homework.
+  Everything due tomorrow goes on it, then it fills up to three things, plus
+  one late thing to catch up on. Everything else sits underneath, soonest due
+  first, in case I finish early. The list does not refill when I finish it, so
+  done really means done.
+- **One tick for the whole night.** The top line says "Tick me" and ticking it
+  ticks all of today's at once. Ticking a single one works too. Either way the
+  task gets ticked in TaskBar.
 - **It taps my wrist before each class.** A few minutes before anything starts,
-  I get a short line with what is next, which room, and the one homework thing
-  worth knowing for that class. The morning one checks the weather too, so it
-  says to bring an umbrella or a jacket when I will need one.
-- **It asks if I finished.** When a homework block ends, my watch gets a
-  reminder that says "Done: Algebra 3.3? Tick me." Ticking it ticks the task
-  in TaskBar, and the plan drops that block. If I ignore it, it goes away the
-  next day. The Calendar app on my watch can only delete an event or rename
-  it, so those count too. If I delete a homework block, or rename it so it
-  starts with "done", the helper notices and ticks it the same way.
-- **A list for free time.** A Reminders list called Homework shows everything
-  I still have to do, soonest due first, with how long each one takes and
-  when the plan has it. If I finish early, I pick one off the top. The card
-  uses it too. Instead of saying "Done for today" it says "Free, get ahead:
-  Algebra 3.4, 30 min".
-- **Things that are not homework get planned too.** Flute practice goes on
-  school days like any other block, and it gets its own "Done?" reminder. The
-  card keeps a score of how many things I ticked this week and my streak of
-  days, and a countdown to the next test with how many study sessions are
-  left.
+  I get a short line with what is next and which room. The one as I leave says
+  what is due today. The morning one checks the weather too, so it says to
+  bring an umbrella or a jacket when I will need one.
+- **One homework buzz a day.** When I get home, my watch buzzes once with
+  tonight's list. On a day off it comes at ten in the morning. The Mac writes
+  that buzz a day early, so it still goes off when the laptop is closed.
+- **Things that are not homework go on the list too.** Flute practice shows up
+  on school days like any other line. The card keeps a score of how many
+  things I ticked this week and my streak of days, and a countdown to the next
+  test. When I am free it says "get ahead" and names one thing to start on.
 - **It watches the school site between syncs.** Every half hour it checks for
   new announcements and new assignments. A teacher posting "quiz moved to
   Friday" shows up on my watch, and a new assignment gets planned within a
@@ -68,15 +64,14 @@ and it taps my wrist a few minutes before each class with where to go.
 - **An evening recap at 8:45.** One line with tomorrow's shape, what is due,
   and what is still left tonight. On Sunday it covers the whole week. At 9:30
   it tells me to wind down and what to pack.
-- **I can talk back from my watch.** Emailing "done algebra 3.3" ticks it off,
-  "skip tonight" moves things, and "what's the next test" gets an answer in a
-  second. Claude looks over tomorrow each evening and can suggest up to three
-  small changes to the plan. On Sunday it can ask me a question or two, like
-  whether to move the homework I kept pushing to Saturday morning. Ticking the
-  reminder means yes.
+- **I can talk back from my watch.** I text or email one line. "Done algebra
+  3.3" ticks it off, and "what's the next test" gets an answer in a second.
+  Last-minute changes are one line too. "No tennis today" takes tennis off the
+  calendar for just that day, and "robotics instead" swaps it in. The card,
+  the calendar and the time I get home all follow.
 - **It checks on itself.** A second helper runs every half hour and asks a
   dozen yes-or-no questions, like "did the plan run in the last hour" and "is
-  anything due tomorrow with no time set aside for it". Every no becomes a
+  anything past due and still not ticked". Every no becomes a
   warning row in TaskBar and, once a day, a reminder on my watch. The warnings
   clear themselves when the problem does.
 - **A page on my Mac for the keyboard.** A small website that only runs on
@@ -140,3 +135,19 @@ on the calendar so the words would show up on the watch. That worked once. Then
 the next nudge read the calendar back, saw a class called "Go to room 310 for
 English" and got confused about what the day looked like. Now the words go in a
 reminder instead, and the calendar keeps the real class names.
+
+## The homework calendar I took out
+
+For a month the helper planned my homework as blocks on the calendar. Algebra
+from 6:40 to 7:10, Spanish after dinner, and a reminder asking "Done?" when
+each block ended. It was the part I was most proud of building.
+
+It did not work for me. The times were wrong, because my evenings never go the
+way a calendar thinks they will. And there was too much to tick. The helper
+keeps a diary of what it does, and the diary said I was finishing most of my
+homework at some other time and leaving the blocks alone.
+
+So I took the times out. Now it only decides **what** is for today, and I
+decide when. The list is short, it stays the same all day, and one tick
+finishes it. I kept the old way behind a setting in case I want it back, but
+the short list is the one I actually look at.
